@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="blueBuyApp">
+    
+<header>
+<div class="vertical-nav-bar" ng-class="{'activate':showNav}">
+  <div class="nav-upper">
+    <ul>
+      <li><a href=""><i class="fa fa-user"></i></a></li>
+      <li><a href=""><i class="fa fa-shopping-cart"></i></a></li>
+      <li><a href=""><i class="fa fa-envelope-o"></i></a></li>
+    </ul>
+  </div>
+
+  <div class="nav-body">
+    <ul>
+      <li><a href=""><i class="fa fa-home"></i>&emsp;Home</a></li>
+      <li><a href=""><i class="fa fa-briefcase"></i>&emsp;Account</a></li>
+      <li><a href=""><i class="fa fa-gift"></i>&emsp;My Orders</a></li>
+      <li><a href=""><i class="fa fa-bell"></i>&emsp;Notifications</a></li>
+      <li><a href=""><i class="fa fa-cog fa-spin"></i>&emsp;Settings</a></li>
+    </ul>
+  </div>
+  <div class="nav-lower">
+    <ul>
+      <li><a href=""><i class="fa fa-facebook-official"></i></a></li>
+      <li><a href=""><i class="fa fa-pinterest"></i></a></li>
+      <li><a href=""><i class="fa fa-instagram"></i></a></li>
+    </ul>
+  </div>
+  
+  
+</div>
+
+
+<div class="horizontal-nav-bar">
+
+  <div class="hamburger" ng-click="showNav=!showNav">
+    <span class="top-bar" ng-class="{'top-bar-activate':showNav}"></span>
+    <span class="mid-bar" ng-class="{'mid-bar-activate':showNav}"></span>
+    <span class="lef-bar" ng-class="{'lef-bar-activate':showNav}"></span>
+  </div>
+
+  <div class="logo">
+    <img src="./images/logo.png">
+  </div>
+  <div class="dropdown-menus">
+  <ul>
+    <li class="dropdown"><a href="">Men <i class="fa fa-angle-down"></i></a>
+        <ul class="dropdown-content">
+          <li><a href="">T-shirts</a></li>
+          <li><a href="">Jeans</a></li>
+          <li><a href="">Shirts</a></li>
+          <li><a href="">Trousers</a></li>
+          <li><a href="">Shoes</a></li>
+        </ul>
+    </li>
+    <li class="dropdown"><a href="">Women <i class="fa fa-angle-down"></i></a>
+        <ul class="dropdown-content">
+          <li><a href="">Sarees</a></li>
+          <li><a href="">Jeans</a></li>
+          <li><a href="">Tops</a></li>
+          <li><a href="">Lehngas</a></li>
+          <li><a href="">Sandals</a></li>
+        </ul>
+    </li>
+    <li class="dropdown"><a href="">Kids <i class="fa fa-angle-down"></i></a>
+        <ul class="dropdown-content">
+          <li><a href="">Casual</a></li>
+          <li><a href="">Toys</a></li>
+          <li><a href="">Books</a></li>
+        </ul>
+    </li>
+    <li class="dropdown"><a href="">Accessories <i class="fa fa-angle-down"></i></a>
+        <ul class="dropdown-content">
+          <li><a href="">Mens</a></li>
+          <li><a href="">Womens</a></li>
+          <li><a href="">Leather</a></li>
+        </ul>
+    </li>
+  </ul>
+  </div>
+
+  <div class="toolbox">
+    <span><i class="fa fa-user"></i></span>
+    <span><i class="fa fa-shopping-cart"></i></span>
+    <span><i class="fa fa-search"></i></span>
+</div>
+</div>
+
+</header>
+
+    <div class="">
+    <div ng-view=""></div>
+    </div>
+
+<footer>
+<div class="footer-box">
+  <div class="footer-upper">
+    <ul>
+      <li>Men's</li>
+      <li>Women's</li>
+      <li>Kids</li>
+      <li>Accessories</li>
+      <li>Sale</li>
+      <li>Lookbook</li>
+      <li>Blog</li>
+    </ul>
+  </div>
+  <div class="footer-lower">
+    <div class="footer-left">
+      <h3>myCart</h3>
+      <h5>13/A Belvedre Yard </h5>
+    </div>
+    <div class="footer-mid">
+      <div class="input-wrapped">
+        <span class="icon">
+          <i class="fa fa-envelope-o"></i>
+        </span>
+        <span class="input-box">
+          <input type="text" name="" placeholder="Sign up for special news">
+        </span>
+        <span class="btn-icon">
+          <i class="fa fa-long-arrow-right"></i>
+        </span>
+      </div>
+      <div class="text-content">
+        <ul>
+          <li>Privacy & Cookies</li>
+          <li>Terms & Conditions</li>
+          <li>Accessibility</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-right">
+      <div class="footer-right-upper">
+        <ul>
+          <li><i class="fa fa-facebook-official"></i></li>
+          <li><i class="fa fa-pinterest "></i></li>
+          <li><i class="fa fa-twitter "></i></li>
+          <li><i class="fa fa-instagram "></i></li>
+        </ul>
+      </div>
+      <div class="footer-right-lower">
+        <ul>
+          <li><i class="fa fa-cc-mastercard"></i></li>
+          <li><i class="fa fa-paypal"></i></li>
+          <li><i class="fa fa-cc-visa "></i></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</footer>
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/about.js"></script>
+        <!-- endbuild -->
+        <script src="https://use.fontawesome.com/b23ae45b0d.js"></script>
+</body>
+</html>
